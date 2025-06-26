@@ -12,7 +12,7 @@ El problema funcional que resuelve es la organización clara y dinámica de trat
 
 ## Patrones de diseño aplicados y justificación
 
-### 1. Singleton (`ControladorMediTrack`) – Patrón Creacional  
+### 1. Singleton (`Controlador`) – Patrón Creacional  
 Se usa para asegurar que solo exista una instancia del controlador central que maneja todos los tratamientos. Así se evita inconsistencias y facilita el acceso global al controlador.
 
 ### 2. Prototype (`Tratamiento`) – Patrón Creacional  
@@ -21,7 +21,7 @@ Permite clonar tratamientos existentes para crear nuevos rápidamente sin repeti
 ### 3. Observer (`TratamientoObservable` y `Paciente`) – Patrón de Comportamiento  
 Permite notificar a todos los pacientes (observadores) asignados a un tratamiento cuando hay novedades o mensajes importantes, garantizando comunicación efectiva.
 
-### 4. Adapter (`AdaptadorHospital` y `SistemaHospitalExterno`) – Patrón Estructural  
+### 4. Adapter (`AdaptadorHospital` y `HospitalExterno`) – Patrón Estructural  
 Facilita la integración con sistemas hospitalarios externos, adaptando su interfaz para que funcione con nuestro sistema sin modificar el código original del sistema externo.
 
 ---
